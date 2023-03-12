@@ -48,5 +48,53 @@ if (liczba % 2 === 0 ) {
 else {
     console.log("liczba jest nieparzysta")
 }
+
+
+
+
+for (let i = 0; i <= 100; i++) {
+
+    if (i % 3 == 0) {
+
+        if (i % 5 == 0) {
+            console.log("FizzBuzz")
+        }
+        else {
+            console.log("Fizz")
+        }
+
+    }
+    else if(i % 5 == 0) {
+        console.log("Buzz")
+    }
+    
+    else {
+        console.log(i)
+    }
+}
+
 */
+
+
+const tablica = [1,8,32,30,56,22,46,10,4,24,70,45,0,0,25]
+
+function zmienna(tab) {
+    for(let a in tab) {
+        if( tab[a] == 0 ) {
+            tab[a] = 1
+
+        }
+    }
+
+    tab.sort((a,b) => {return a - b})
+    console.log(tab)
+}
+zmienna(tablica)
+
+
+
+
+
+
+
 
